@@ -3,7 +3,7 @@ const { createApp } = Vue;
 createApp({
   data() {
     return {
-      mail: 0,
+      mail: "",
     };
   },
 
