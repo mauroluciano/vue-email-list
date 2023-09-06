@@ -11,9 +11,10 @@ createApp({
     axios
       .get("https://flynn.boolean.careers/exercises/api/random/mail")
       .then((response) => {
-        for (let i = 0; i < 10; i++) {
+        for (let i = 1; i <= 10; i++) {
           const randomMail = response.data.response;
           this.mail = randomMail;
+          console.log(i);
         }
       });
   },
